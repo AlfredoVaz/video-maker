@@ -69,4 +69,6 @@ credentials/credentials.json
 #data
 content.json
 
+#images
 content/*.png
+content/*.jpg
