@@ -10,11 +10,11 @@ const gm = require('gm').subClass({imageMagick: true, associations: true} )
 async function robot() {
     const content = state.load()
     
-    //await fetchImagesOfAllSentences(content)
-    //await downloadAllImages(content)
-    //state.save(content)
+    await fetchImagesOfAllSentences(content)
+    await downloadAllImages(content)
+    state.save(content)
 
-    //await convertAllImages(content)
+    await convertAllImages(content)
     await createAllSentencesImages(content)
     await createYouTubeThumbnail()
 
