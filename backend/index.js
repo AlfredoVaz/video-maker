@@ -5,13 +5,10 @@ const robots = {
     image: require('./robots/image')
 }
 
-async function start(){
-    robots.input()
+module.exports = async function start(lang, term){
+    robots.input(lang, term)
     await robots.text();
     await robots.image();
 
-    const content = robots.state.load()
-    console.dir(content, {depth: null})
+    return robots.state.load()
 }
-
-start()
