@@ -61,14 +61,14 @@ typings/
 .next
 
 # credentials
-credentials/*.json
+backend/credentials/*.json
 
 # credentials
-credentials/credentials.json
+backend/credentials/credentials.json
 
 #data
-content.json
+backend/content.json
 
 #images
-content/*.png
-content/*.jpg
+backend/content/*.png
+backend/content/*.jpg
